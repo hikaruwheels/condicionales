@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+        color: white;
+    }
+</style>
+
+
+<body>
+    Edad: <input type="text" id="edad"><br>
+    <input type="button" value="Definir edad" onclick="detedad()"><br>
+
+    <script>
+        function detedad(){
+            var edad = document.getElementById("edad").value;
+
+            if(edad <8){
+                document.getElementById("salida").innerHTML = "<h1 class='ben'>Benjamin</h1>"
+            }else if(edad <10){
+                document.getElementById("salida2").innerHTML = "<h1 class='alev'>Alevín</h1>"
+            }else if(edad <12){
+                document.getElementById("salida3").innerHTML = "<h1 class='infa'>Infantil</h1>"
+            }else if(edad >11){
+                document.getElementById("salida4").innerHTML = "<h1 class='cade'>Cadete</h1>"
+            }
+        }
+    </script>
+    <div id="salida"></div>
+    <div id="salida2"></div>
+    <div id="salida3"></div>
+    <div id="salida4"></div>
+</body>
+</html>
